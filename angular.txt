@@ -1,0 +1,20 @@
+what is difference between promise and observable
+what is interpolation
+what is directives
+what is service
+how we can pass data to child component from parent component
+how we can pass data to parent component from child component
+how we can use Output
+what is routing in angular
+what different type forms availabel in angular
+what is the difference between template and reactive forms
+what is PWA
+how we can authenticate route
+how we can add component in our project
+have you use custom pipe? explain the scenario
+what is dependancy injection
+what type of compiler in angular
+how can we have same set of style in different component 
+how do you test application
+what is http client
+brief about life cycle hooks? explain the scenario 
