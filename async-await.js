@@ -1,22 +1,16 @@
-// a promise
-let promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-    resolve('Promise resolved')}, 4000); 
-});
+//promise
+let resolveAfter2Seconds =  new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  });
 
-// async function
-async function asyncFunc() {
-    try {
-        // wait until the promise resolves 
-        let result = await promise; 
-
-        console.log(result);
-        console.log('hello')
-    }   
-    catch(error) {
-        console.log(error);
-    }
+//async call
+async function asyncCall() {
+  console.log('calling');
+  const result = await resolveAfter2Seconds;
+  console.log(result);
+  // Expected output: "resolved"
 }
 
-// calling the async function
-asyncFunc(); // Promise resolved
+asyncCall();
