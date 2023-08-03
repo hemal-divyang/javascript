@@ -1,29 +1,53 @@
-//EX.1
-//pass function as arguments to another function, or return function from another function called 
-function twiceNum(number) {
-  return function () {
-    return number * 2
-  }
+//HIGHER ORDER FUNCTION
+
+// function which takes a function as a argument or return a function as output
+function x(fn){
+fn();
 }
-let twiceTwo = twiceNum(2)
-console.log(twiceTwo())
-
-
-//EX.2
-// add two numbers
-function sum(a, b) {
-  return a + b
+function y() {
+	console.log('hello world')
 }
-//operate with a higher-order function
-function calculate(operation, numsArray) {
-  if (numsArray.length <= 2) {
-    let a = numsArray[0]
-    let b = numsArray[1]
+x(y) // x is higher order function and y is call back function
 
-    // return a function
-    return operation(a, b)
-  }
+
+//normal function in higher order function
+const data = [10,20,30]
+const calculate_square = function(d){
+	const output = [];
+	for(var i=0;i<d.length;i++){
+		output.push(d[i]*2);
+	}
+	return output
 }
 
-// calculate the sum of two numbers
-console.log(calculate(sum, [5, 6])) // output: 11
+const calculate_addone = function(d){
+ const output = [];
+ for(var i=0;i<d.length;i++){
+	output.push(d[i]+1)
+ }
+ return output
+}
+
+console.log(calculate_square(data))
+console.log(calculate_addone(data))
+
+
+//conver above normal function to higher order function
+const data = [10,20,30]
+function cal_square(x){
+ return x*2
+}
+function cal_add(y){
+ return y+1
+}
+const calculate_square = function(d, calculate){
+	const output = [];
+	for(var i=0;i<d.length;i++){
+		output.push(calculate(d[i]));
+	}
+	return output
+}
+console.log(calculate_square(data,cal_square))
+console.log(calculate_square(data,cal_add))
+
+//* map is higher order function
