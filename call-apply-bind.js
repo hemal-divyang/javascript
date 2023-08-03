@@ -1,45 +1,53 @@
-//EX.1
-function sayHello() {
-    return "Hello " + this.name;
+//CALL,APPLY,BIND
+
+//below is call method
+const employee = {
+	name:'Hemal',
+	lastName:'Barsopiya',
+	getFullName: function(){
+		return `${this.name} ${this.lastName}`
+	}
 }
-var obj = { name: "Sandy" };
-sayHello.call(obj); // Returns "Hello Sandy"	
 
-//EX.2
-var person = {
-    age: 23,
-    getAge: function () {
-        return this.age;
-    }
+const customer = {
+	name:'Divyang',
+	lastName:'Panchasara'
 }
-var person2 = { age: 54 };
-person.getAge.call(person2);// Returns 54 
 
-//EX.3 call() accepts arguments:
-function saySomething(message) {
-    return this.name + " is " + message;
+employee.getFullName.call(customer)
+
+//below is apply method which is similar to call but passing parameter value is in array format
+
+const employee = {
+	name:"Hemal",
+	lastName:'Barsopiya',
+	getFullname: function(city,profile){
+		return `${this.name} ${this.lastName} ${city} ${profile}` 
+	}
 }
-var person4 = { name: "John" };
-saySomething.call(person4, "awesome");// Returns "John is awesome"
 
-//The apply method is similar to the call() method. The only difference is that,call() method takes arguments separately whereas, apply() method takes arguments as an array.
-
-//Ex. apply()
-function saySomething(message){
-    return this.name + " " + message;
+const customer = {
+	name:'Divyang',
+	lastName:'Panchasara'
 }
-var person = {name:"Hemal"};
-console.log(saySomething.apply(person ,['kem chho']));
 
+employee.getFullname.call(customer,'Rajkot','Instructor');
+employee.getFullname.apply(customer,['Ahmedabad','Artist'])
 
-//This method returns a new function, where the value of “this” keyword will be bound to the owner object, which is provided as a parameter.
-//Ex. bind()
-
-var employeeDetail = {
-    showDeatil: function(department,position){
-        return this.name + "|" + department + "|" + position
-    }
+//below is bind method, bind will execute function later on
+const employee = {
+	name:"Hemal",
+	lastName:'Barsopiya',
+	getFullname: function(city,profile){
+		return `${this.name} ${this.lastName} ${city} ${profile}` 
+	}
 }
-obj = {name: 'Hemal'}
-var empDet = employeeDetail.showDeatil.bind(obj,"IT","Consultant")
-console.log(empDet)
+
+const customer = {
+	name:'Divyang',
+	lastName:'Panchasara'
+}
+
+const handler = employee.getFullname.bind(customer,'Rajkot','Instructor');
+console.log(handler());
+
