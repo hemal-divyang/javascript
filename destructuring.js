@@ -1,3 +1,4 @@
+//we can extract data from arrays and objects and assign them to variables.Apr
 // assigning object attributes to variables
 const person = {
     name: 'Sara',
