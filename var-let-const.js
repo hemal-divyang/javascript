@@ -18,7 +18,7 @@
 
  //A variable declared using ‘var’ can be redefined and even redeclared anywhere throughout its scope.
 var x = 30;
-console.log(x); //prints 30
+console.log(x); //redeclared , //prints 30
 x = "Hi"; //redefining or re-assigning (works without any error)
 console.log(x); //prints "Hi"
  
@@ -31,7 +31,7 @@ console.log(y) //Prints "Hello"
 //A variable declared using ‘let’ can be redefined within its scope but cannot be re-declared within its scope.
 let x = 11;
 console.log(x); //prints 11
-x = "IB"; //works without any error
+x = "IB"; // redefined works without any error
 console.log(x); //prints "IB"
 
 let y = 12;
