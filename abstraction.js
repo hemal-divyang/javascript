@@ -17,3 +17,28 @@ function Employee(name, sal){
 }
 let emp = new Employee("Hemal", 3000)
 console.log(emp.getEmpDet())
+
+
+//Ex.2
+class Employee
+{
+constructor() {
+if(this.constructor == Employee){
+throw new Error(" Object of Abstract Class cannot be created");
+}
+}
+display(){
+throw new Error("Abstract Method has no implementation");
+}
+}
+class Manager extends Employee
+{
+display(){
+//super.display();
+console.log("I am a Manager");
+}
+}
+//var emp = new Employee;
+var mang=new Manager();
+mang.display();
+
