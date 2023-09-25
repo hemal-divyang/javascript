@@ -1,0 +1,15 @@
+// string is immutable but object and array is mutable
+
+let str = 'JS';
+name[0] = 'R';
+name[1] = 'X'
+console.log(str)
+
+let arr = ['a','b']
+arr[0]='c'
+arr[1]='d'
+console.log(arr)
+
+let obj = {name:'hemal',sal:2000}
+obj.name = 'ved'
+console.log(obj.name)
