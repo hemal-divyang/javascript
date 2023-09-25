@@ -1,4 +1,4 @@
-// string is immutable but object and array is mutable
+// string is immutable (not able to be changed) but object and array is mutable(able to be changed)
 
 let str = 'JS';
 name[0] = 'R';
