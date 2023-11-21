@@ -1,0 +1,18 @@
+ String Method           
+ length
+ slice()
+ substring()
+ substr()
+ replace()
+ replaceAll()
+ toUpperCase()
+ toLowerCase()
+ concat()
+ trim()
+ trimStart()
+ trimEnd()
+ padStart()
+ padEnd()
+ charAt()
+ charCodeAt()
+ split()
