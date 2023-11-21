@@ -1,5 +1,5 @@
- String Method           
- length
+ String Method          Array Method 
+ length      
  slice()
  substring()
  substr()
