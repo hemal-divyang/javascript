@@ -1,4 +1,4 @@
- String Method  (LSSSSRRTTTTTCCCPP)  
+ String Method  (L SSSS RR TTTTT CCC PP)  
  length      
  slice() //slice(start, end)
  substring() //substring(start, end)
@@ -17,16 +17,16 @@
  padStart()
  padEnd()
 
-Array Method
+Array Method (L T PP SSS U J D C F)
  length
  toString()
  pop()
  push()
  shift()
+ splice()
+ slice()
  unshift()
  join()
  delete()
  concat()
  flat()
- splice()
- slice()
