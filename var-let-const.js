@@ -9,9 +9,7 @@ When to Use var, let, or const?
 
 5. Only use var if you MUST support old browsers.
 
- 
-//Function Scope: Visibility is limited to the function.
-// var declarations are function scoped.
+ // var declarations are function scoped.
  function myFn() {
      var x = 10; 
      console.log(x); //prints 10
@@ -19,8 +17,7 @@ When to Use var, let, or const?
  console.log(x); // ReferenceError: x is not defined
 
 
- //Block Scope: Visibility is limited to the block of code.
- //let / const declarations are block scoped.
+ //let / const are Block Scope: 
  if (true) { 
      let x = 10;
      console.log(x); //prints 10
@@ -28,7 +25,7 @@ When to Use var, let, or const?
  console.log(x); // ReferenceError: x is not defined
 
 
- //A variable declared using ‘var’ can be redefined and even redeclared anywhere throughout its scope.
+//A variable declared using ‘var’ can be redefined and even redeclared anywhere throughout its scope.
 var x = 30;
 console.log(x); //redeclared , //prints 30
 x = "Hi"; //redefining or re-assigning (works without any error)
