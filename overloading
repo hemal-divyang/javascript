@@ -1,0 +1,8 @@
+function displayName(name){
+  return `Hi  ${name}`
+}
+
+function displayName(name,lname){
+  return `Hi  ${name}  ${lname}`
+}
+console.log(displayName('hemal','panchasara'));
