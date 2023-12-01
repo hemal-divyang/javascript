@@ -1,0 +1,12 @@
+class Animal{
+  makesound(){
+    return 'I am animal...'
+  }
+}
+class Cat extends Animal{
+  makesound(){
+    return 'I am cat...'
+  }
+}
+const cat = new Cat();
+console.log(cat.makesound())
