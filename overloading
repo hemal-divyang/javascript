@@ -1,3 +1,5 @@
+//two or more functions can have the same name but different parameters
+
 function displayName(name){
   return `Hi  ${name}`
 }
