@@ -1,4 +1,5 @@
-// string is immutable (not able to be changed) but object and array is mutable(able to be changed)
+// string is immutable (not able to be changed) - stores in memory location
+//object and array is mutable(able to be changed) - store a reference to the location in memory
 
 let str = 'JS';
 name[0] = 'R';
