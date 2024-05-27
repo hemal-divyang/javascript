@@ -1,0 +1,17 @@
+let obj = {a:1,b:2};
+const key = 'c';
+console.log(obj[key])
+
+function sum(a,b){
+  return a+b
+}
+console.log(sum(4,'2'))
+x='Hello'
+y = x.replace('l','L')
+console.log(y)
+
+let t = 4;
+console.log(t++ + ++x)
+
+let [a, , c] = [1,2,3]
+console.log(c)
