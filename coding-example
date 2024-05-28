@@ -15,3 +15,8 @@ console.log(t++ + ++x)
 
 let [a, , c] = [1,2,3]
 console.log(c)
+
+let x = 10;
+let y = x;
+y += 5;
+console.log(y)
