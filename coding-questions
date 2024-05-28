@@ -10,5 +10,6 @@
 *10. Write a JavaScript program to convert a string to title case (capitalize the first letter of each word). 
 
 *11. Implement a debounce function in JavaScript that limits the frequency of a function’s execution when it’s called repeatedly within a specified time frame.
-12. Write a function that takes an array of objects and a key, and returns a new array sorted based on the values of that key in ascending order
-13.
+*12. Write a function that takes an array of objects and a key, and returns a new array sorted based on the values of that key in ascending order
+13. Implement a deep clone function in JavaScript that creates a copy of a nested object or array without any reference to the original. 
+*14. Write a recursive function to calculate the factorial of a given number. 
