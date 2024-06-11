@@ -1,0 +1,13 @@
+function Car(color,cost,milage){
+this.color = color,
+this.cost = cost,
+this.milage = milage,
+ this.startCar = function(){
+    console.log(this.color + ' ' + this.cost + ' ' + this.milage)
+  }
+}
+let mycar = new Car('red',1000,22);
+let yourcar = new Car('yellow',2000,11)
+console.log(mycar.startCar())
+
+console.log(yourcar.startCar())
