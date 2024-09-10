@@ -20,3 +20,31 @@ let x = 10;
 let y = x;
 y += 5;
 console.log(y)
+
+const str = 1<2<3
+console.log(str)
+
+const str = "Hello";
+str[0] = 'D';
+console.log(str)
+
+console.log(num)
+var num;
+num = 6;
+console.log(num)
+
+let num = 1
+console.log(num++);
+console.log(++num)
+
+num = 6
+console.log(num);
+let num
+
+num = 6
+console.log(num);
+var num
+
+console.log(typeof typeof 1)
+
+console.log(3+4+'5')
