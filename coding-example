@@ -48,3 +48,16 @@ var num
 console.log(typeof typeof 1)
 
 console.log(3+4+'5')
+
+let a = 3;
+let b = new Number(3)
+console.log(a==b)
+console.log(a===b)
+
+const numbers = [1,2,3,4,5]
+const [y] = numbers
+console.log(y)
+
+console.log(5>'15'<5)
+console.log(7<'15'<7)
+console.log(7<'85'>5)
