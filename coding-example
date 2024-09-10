@@ -71,3 +71,22 @@ const sum = (num)=>{
   console.log(num)
 }
 sum(1,2)
+
+let i =10
+setTimeout(function(){
+  console.log(i)
+},1000)
+let i = 20
+
+function foo(a,a){
+  console.log(a)
+}
+foo(1,2);
+
+function sayHi(){
+  console.log('React')
+}
+sayHi = function(){
+  console.log('Angular')
+}
+sayHi()
