@@ -126,3 +126,7 @@ const a = [1,2,3,4].forEach((item)=>{
    return item
 })
 console.log(a)
+
+let a = [null];
+let b = 5;
+console.log(a?a:b)
