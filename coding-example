@@ -114,3 +114,15 @@ for(let num of [1,4,3,9,6]){
   },1000)
 }
 console.log('outer',num)
+
+const b = []
+const a = [1,2,3,4].map((item)=>{
+   return item
+})
+console.log(a)
+
+const b = []
+const a = [1,2,3,4].forEach((item)=>{
+   return item
+})
+console.log(a)
