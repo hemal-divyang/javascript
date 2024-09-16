@@ -90,3 +90,13 @@ sayHi = function(){
   console.log('Angular')
 }
 sayHi()
+
+const a = 'hemal'
+a = "ved"
+console.log(a)
+
+const a = {
+  name:'hemal'
+}
+a.name = "ved"
+console.log(a.name)
