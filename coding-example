@@ -100,3 +100,17 @@ const a = {
 }
 a.name = "ved"
 console.log(a.name)
+
+for(var num of [1,4,3,9,6]){
+  setTimeout(()=>{
+    console.log('timer',num)
+  },1000)
+}
+console.log('outer',num)
+
+for(let num of [1,4,3,9,6]){
+  setTimeout(()=>{
+    console.log('timer',num)
+  },1000)
+}
+console.log('outer',num)
