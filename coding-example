@@ -6,6 +6,7 @@ function sum(a,b){
   return a+b
 }
 console.log(sum(4,'2'))
+
 x='Hello'
 y = x.replace('l','L')
 console.log(y)
