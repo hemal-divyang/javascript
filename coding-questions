@@ -12,4 +12,18 @@
 *11. Implement a debounce function in JavaScript that limits the frequency of a function’s execution when it’s called repeatedly within a specified time frame.
 *12. Write a function that takes an array of objects and a key, and returns a new array sorted based on the values of that key in ascending order
 13. Implement a deep clone function in JavaScript that creates a copy of a nested object or array without any reference to the original. 
-*14. Write a recursive function to calculate the factorial of a given number. 
+*14. Write a recursive function to calculate the factorial of a given number.
+
+15 how to find if number is squre root or not
+16. write a function to convert input string (2020-09-08)to output string(08-September-2020)
+const input = "2020-09-08";
+function formatDate(input) {
+  const date = new Date(input);
+  console.log(date)
+  return date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric'
+  });
+}
+console.log(formatDate(input));
