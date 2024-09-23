@@ -45,5 +45,14 @@ let array = [11,2,3,4,5,6]
 let obj = Object.assign({},array));
 console.log(obj)
 
+20. remove duplicate from number array
+let numbers = [1, 2, 3, 2, 4, 5, 1, 6, 3];
+let uniqueNumbers = numbers.filter((num, index) => {
+    return numbers.indexOf(num) === index;
+});
+console.log(uniqueNumbers);
+
+21. remove duplicate from string array
+
 
 
