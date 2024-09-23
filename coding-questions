@@ -27,3 +27,23 @@ function formatDate(input) {
   });
 }
 console.log(formatDate(input));
+
+17. swapping two numbers  in javascript 
+let a = 5;
+let b = 10;
+[a, b] = [b, a];
+
+18. reverse a sequence of digit
+const number = 12345;
+function reverseDigits(number) {
+    return parseInt(number.toString().split('').reverse().join(''), 10);
+}
+console.log(reverseDigits(number))
+
+19. convert array into object
+let array = [11,2,3,4,5,6]
+let obj = Object.assign({},array));
+console.log(obj)
+
+
+
