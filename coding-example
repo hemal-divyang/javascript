@@ -135,3 +135,6 @@ console.log(a?a:b)
 const arr = [1,2,3]
 delete arr[0]
 console.log(arr.length)
+
+console.log([]-[])
+console.log([]+[])
