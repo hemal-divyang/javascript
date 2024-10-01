@@ -15,6 +15,17 @@ console.log(isPalindrome("hello")); // Output: false
 5. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
 *6. Write a JavaScript program to calculate the factorial of a given number. 
 *7. Write a JavaScript function to check if a given number is prime.
+a.function isPrime(num) {
+  if (num < 2) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(isPrime(3));
+
 8. Write a JavaScript program to find the largest element in a nested array. 
 *9. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
 *10. Write a JavaScript program to convert a string to title case (capitalize the first letter of each word). 
