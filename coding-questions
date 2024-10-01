@@ -1,6 +1,16 @@
 1. Write a JavaScript function to calculate the sum of two numbers.
 2. Write a JavaScript program to find the maximum number in an array.
 3. Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards).
+a. let str = 'A man, a plan, a canal: Panama'
+function isPalindrome(str) {
+  let newStr = str.replace(/[^a-zA-Z0-9]/g,'').toLowerCase();
+  let res = newStr.split('').reverse().join('')
+  return newStr === res
+}
+console.log(isPalindrome("A man, a plan, a canal: Panama")); // Output: true
+console.log(isPalindrome("racecar")); // Output: true
+console.log(isPalindrome("hello")); // Output: false
+
 4. Write a JavaScript program to reverse a given string. 
 5. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
 *6. Write a JavaScript program to calculate the factorial of a given number. 
