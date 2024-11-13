@@ -17,3 +17,7 @@ Non-Primitive (Reference) Data Types
 Characteristics:
 Mutable: The properties of an object or elements of an array can be changed after creation.
 Stored by Reference: When you assign or pass a reference type, JavaScript does not copy the value itself. Instead, it copies the reference (or memory address) of the object, meaning both variables will point to the same object in memory.
+
+Reason for the Difference
+  Primitives are generally small, fixed-size data values,so they can be stored directly in memory.
+  Non-primitives (like objects or arrays) can be large and complex, so JavaScript stores a reference to their memory location rather than duplicating their data. 
