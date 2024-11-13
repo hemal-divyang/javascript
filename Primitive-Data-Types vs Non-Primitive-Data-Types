@@ -1,0 +1,19 @@
+Primitive Data Types
+  String (e.g., "Hello")
+  Number (e.g., 42)
+  Boolean (e.g., true or false)
+  Null (represents an intentional absence of value, e.g., null)
+  Undefined (a variable that has been declared but not assigned a value, e.g., undefined)
+  Symbol (used to create unique identifiers, e.g., Symbol("id"))
+  BigInt (used for representing integers larger than Number.MAX_SAFE_INTEGER, e.g., 123n)
+Characteristics:
+Immutable: Once created, their value cannot be changed. For instance, any operation on a String creates a new string rather than modifying the original.
+Stored by Value: When you assign or pass a primitive value, JavaScript creates a copy of the actual value.
+
+Non-Primitive (Reference) Data Types
+  Object (e.g., { name: "John" })
+  Array (e.g., [1, 2, 3])
+  Function (e.g., function() { ... })
+Characteristics:
+Mutable: The properties of an object or elements of an array can be changed after creation.
+Stored by Reference: When you assign or pass a reference type, JavaScript does not copy the value itself. Instead, it copies the reference (or memory address) of the object, meaning both variables will point to the same object in memory.
