@@ -1,4 +1,4 @@
-Primitive Data Types
+Primitive Data Types (Passed by Value)
   String (e.g., "Hello")
   Number (e.g., 42)
   Boolean (e.g., true or false)
@@ -10,7 +10,7 @@ Characteristics:
 Immutable: Once created, their value cannot be changed. For instance, any operation on a String creates a new string rather than modifying the original.
 Stored by Value: When you assign or pass a primitive value, JavaScript creates a copy of the actual value.
 
-Non-Primitive (Reference) Data Types
+Non-Primitive (Reference) Data Types (Passed by Reference) 
   Object (e.g., { name: "John" })
   Array (e.g., [1, 2, 3])
   Function (e.g., function() { ... })
