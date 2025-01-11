@@ -23,3 +23,13 @@ const obj1 = {
 obj1.greet(); // Output: Hello, undefined
 
 
+function normalFunction() {
+  this.name = 'Alice';
+  const arrowFunction = () => {
+    console.log(this.name);
+  };
+  arrowFunction();
+}
+normalFunction(); // Output: Alice
+
+
