@@ -74,6 +74,7 @@ let uniqueNumbers = numbers.filter((num, index) => {
 console.log(uniqueNumbers);
 
 21. remove duplicate from string array
+22. how to check if number is interger
 
 
 
