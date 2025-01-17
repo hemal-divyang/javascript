@@ -138,3 +138,11 @@ console.log(arr.length)
 
 console.log([]-[])
 console.log([]+[])
+
+let obj1 = {id:1,name:'test'}
+let obj2 = {id:2,name:"xyz"}
+obj1 = obj2
+console.log(obj1.name)
+obj1.name = 'abc'
+console.log(obj2.name)
+
