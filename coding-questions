@@ -75,6 +75,17 @@ console.log(uniqueNumbers);
 
 21. remove duplicate from string array
 22. how to check if number is interger
+23. check two strings are anagrams or not
+let a = 'listen'
+let b = 'silent'
+function myFun(a,b){
+let aRes = a.split('').sort().join('')
+let bRes = b.split('').sort().join('')
+if(aRes === bRes){
+  return true
+}
+}
+console.log(myFun(a,b))
 
 
 
