@@ -3,3 +3,11 @@ String is array like object
 let str = 'hemal'
 
 you can check length of str and index of each character. but push, pop... can not be done
+
+
+How to convert array like object into array
+for example :
+var arrayLike = { 0: 'a', 1: 'b', 2:'c', lenght:3}
+var array1 = Array.from(arrayLike)
+var array1 = [...arrayLike]
+//output [a,b,c]
