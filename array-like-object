@@ -1,0 +1,5 @@
+String is array like object 
+
+let str = 'hemal'
+
+you can check length of str and index of each character. but push, pop... can not be done
